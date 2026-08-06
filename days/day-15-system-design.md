@@ -6,7 +6,7 @@ tags: [system-design]
 ---
 
 TL;DR
-- Designed a highly available, low-latency URL shortening service supporting custom aliases, TTLs, and basic analytics; focused on scalability (10k QPS reads, 1k QPS writes), low redirect latency, and operational simplicity.
+- Designed a highly available, low-latency URL shortening service supporting custom aliases, TTLs, and basic analytics; focused on scalability (10k QPS reads, 1k QPS writes), low redirect latency, and a small demo implementation in FastAPI is included in the repo under `day-15/`.
 
 What I learned
 1. A simple KV store (DynamoDB/Cassandra) + Redis cache + CDN edges covers low-latency redirects and high read QPS.
@@ -112,6 +112,9 @@ Details
   - Explain why chosen DB and ID generation approach.
   - Be ready to discuss hot-key mitigation and monitoring.
   - Sketch a simple diagram showing components and request flow.
+
+- Demo (in-repo)
+  A production-like demo implementation (FastAPI, Redis cache, Postgres backing store, Snowflake-like ID generator) is included under `day-15/`. It is meant for local testing and interview demos — see `day-15/README.md` for how to run it with Docker Compose.
 
 - References
   - Snowflake ID generation pattern
