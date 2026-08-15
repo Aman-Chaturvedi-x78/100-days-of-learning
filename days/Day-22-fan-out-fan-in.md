@@ -1,5 +1,5 @@
 ---
-date: 2026-08-13
+date: 2026-08-14
 day: 22
 title: "Fan-Out/Fan-In: Parallel Agent Execution in LangGraph"
 tags: [agents, langgraph, parallelism, orchestration, performance]
